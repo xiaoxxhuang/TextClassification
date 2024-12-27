@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  app:
+    platform: linux/amd64
+    build:
+      context: ./app
+      dockerfile: app/Dockerfile
+    image: mobilebert_app:local
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./model/src/model:/opt/ml/model

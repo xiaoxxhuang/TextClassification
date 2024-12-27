@@ -1,0 +1,7 @@
+transformers==4.46.1
+torch==2.5.0
+accelerate==1.0.1
+scikit-learn
+pandas
+transformers-interpret
+black

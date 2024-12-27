@@ -1,0 +1,11 @@
+.idea
+.DS_Store
+
+__pycache__/
+*.pyc
+
+venv/
+
+model/src/dataset/ml_datasets.csv
+model/training_outputs/
+model/src/model
