@@ -10,7 +10,7 @@ def get_classification_report(predictions, test_label):
     true_labels = test_label.values
     print(
         classification_report(
-            true_labels, predicted_labels, target_names=["Non-Sensitive", "Sensitive"]
+            true_labels, predicted_labels, target_names=["Non-Sensitive", "Sensitive"],labels=[0, 1]
         )
     )
 

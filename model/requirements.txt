@@ -5,3 +5,6 @@ scikit-learn
 pandas
 transformers-interpret
 black
+lime
+shap
+transformers_interpret
