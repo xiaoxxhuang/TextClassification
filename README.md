@@ -63,11 +63,24 @@ To get started with this project in local, follow these steps:
 
 4. **(Optional) Test your newly trained model with `test.py`**.
    You may change the test email in the test.py script.
+
    ```
    cd model
    python test.py
    ```
-5. **Replaced the `.tar.gz` file with newly trained model, and commit to Bitbucket to be deployed to s3 bucket.**
+
+5. **(Optional) Explain your output with your newly trained model with `explain_*.py`**.
+   You may change the test email in each explain\_\*.py script.
+
+   ```
+   cd model
+   python explain_lime.py
+   python explain_shap.py
+   ```
+
+   You could find the .html file under src/explanation
+
+6. **Replaced the `.tar.gz` file with newly trained model, and commit to Bitbucket to be deployed to s3 bucket.**
    ```
    cd model
    python zip.py
